@@ -39,13 +39,14 @@ html,body{
 }
 #overlay{
     height: 100vh;
-    width: 100%;
+    width: 10%;
     /* position: absolute; */
     z-index: 99999;
     display: flex;
     flex-direction: column;
     text-align: right;
     position: fixed;
+    right: 0%;
 }
 #overlay i{
     font-size: 26px;
@@ -57,13 +58,15 @@ html,body{
 #overlay .v{
     height: 100px;
     width: 100px;
-    background-color: aqua;
     border-radius: 50%;
     position: absolute;
     top: 80%;
-    left: 90%;
     overflow: hidden;
-
+}
+#overlay .v video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 #page1{
     min-height: 100vh;
