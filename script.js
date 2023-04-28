@@ -1,15 +1,14 @@
 
-
 gsap.to("#vd",{
-    width : "80%",
     scrollTrigger :{
         trigger : "#page1 #vd",
         scroller : "body",
         // markers : true,
         start: "top 65%",
-        // pin: true,/
+        end :"top 25%",
         scrub : true,
-    }
+    },
+    width : "85%",
 })
 gsap.to("#page2 #txt .move",{
     transform : "translateX(-20%)",
@@ -23,13 +22,28 @@ gsap.to("#page2 #txt .move",{
     }
 })
 
-gsap.to(".vd2",{
-    scrollTrigger:{
-        trigger : ".vd2",
-        start : " top 20%",
-        end : "top 100%",
-        markers : true,
+gsap.to("#page3 .vd2",{
+   width : "430px",
+   height: "430px",
+    scrollTrigger :{
+        trigger : "#page3 .vd2",
+        scroller : "body",
+        // markers : true,
+        start: "top 55%",
+        end : "top 30%",
         scrub : true,
-        pin : true
     }
 })
+gsap.to("#page3 .vd2 video",{
+    width : "300px",
+    height : "300px",
+    duration : .5,
+     scrollTrigger :{
+         trigger : "#page3 .vd2",
+         scroller : "body",
+        //  markers : true,
+         start: "top 55%",
+         end : "top 30%",
+         scrub : true,
+     }
+ })
